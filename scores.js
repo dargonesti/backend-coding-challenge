@@ -79,7 +79,7 @@ exports.getCityScore = function(query, city)
   }
   if(score > 0 && 
     "longitude" in query && "latitude" in query &&
-    "longitude" in city && "latitude" in city)
+    "long" in city && "lat" in city)
   {
     var dist = exports.distance(query.latitude, query.longitude, city.lat, city.long);
     score *= exports.distanceToScore(dist);
