@@ -12,7 +12,7 @@ var cities = require("./cities.js");
 
 router.use(bodyParser.urlencoded({ extended: true }));
 
-router.get('/', function (req, res) { ///suggestions:q
+router.get('/suggestions/', function (req, res) { ///suggestions:q
 
   //User.findById(req.params.q, function (err, user) {
      // if (err) return res.status(500).send("There was a problem finding the user.");
